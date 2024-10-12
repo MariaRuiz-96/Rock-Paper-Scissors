@@ -19,8 +19,7 @@ function getHumanChoice(){
     let jugador
 
     do{
-        jugador = prompt("Pidra, Papel o Tijera?");
-        jugador = jugador.toLowerCase()
+        jugador = prompt("Pidra, Papel o Tijera?").toLowerCase()
     } while( jugador !== "piedra" && jugador !== "papel" && jugador !== "tijera");
 
     return jugador

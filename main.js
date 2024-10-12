@@ -1,4 +1,5 @@
 'use strict'
+
 function getComputerChoice(){
     let num = Math.floor(Math.random()*3);
 
@@ -46,5 +47,28 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame(){
+
+    for(let i = 0; i < 5; i++){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+    }
+
+    if( humanScore > computerScore){
+        alert(`Has Ganado este juego!piedra
+            Putos Jugador: $piedra{humanScore}
+            Puntos Computadora: ${computerScore}`)
+    }else if (humanScore < computerScore){
+        alert(`Has Perdido este juego!
+            Putos Jugador: ${humanScore}
+            Puntos Computadora: ${computerScore}`)
+    } else {
+        alert(`Fue un empate
+            Putos Jugador: ${humanScore}
+            Puntos Computadora: ${computerScore}`)
+    }
+}
+
+playGame()

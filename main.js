@@ -34,11 +34,15 @@ function playRound(humanChoice, computerChoice){
     if(humanChoice == "tijera" && computerChoice =="papel" ||
         humanChoice == "papel" && computerChoice =="piedra" ||
         humanChoice == "piedra" &&computerChoice =="tijera"){
-        alert("gana jugador")
-    } else if(humanChoice == computerSelection){
-        alert("empate")
+        alert(`Ganaste! ${humanChoice} le gana a ${computerChoice}`)
+        humanScore += 1
+    } else if(humanChoice == computerChoice){
+        alert(`Empate escogieron ${humanChoice}`)
+        humanScore += 1;
+        computerScore += 1;
     } else{
-        alert("computadora gana")
+        alert(`Perdiste! ${computerChoice} le ganan a ${humanChoice}`)
+        computerScore += 1;
     }
 }
 

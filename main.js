@@ -27,6 +27,3 @@ function getHumanChoice(){
 }
 
 getHumanChoice()
-
-
-

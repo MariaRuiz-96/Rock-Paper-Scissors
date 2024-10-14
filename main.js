@@ -71,6 +71,7 @@ function playGame(){
     }
     //* prueba rama secundaria
     //* Pueba segundo commit de rama secunadria
+    //* tercer commit rama secunadara para envio de esto a la principal
 }
 
 playGame()

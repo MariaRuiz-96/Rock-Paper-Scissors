@@ -70,6 +70,7 @@ function playGame(){
             Puntos Computadora: ${computerScore}`)
     }
     //* prueba rama secundaria
+    //* Pueba segundo commit de rama secunadria
 }
 
 playGame()

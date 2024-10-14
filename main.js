@@ -58,7 +58,7 @@ function playGame(){
 
     if( humanScore > computerScore){
         alert(`Has Ganado este juego!piedra
-            Putos Jugador: $piedra{humanScore}
+            Putos Jugador: ${humanScore}
             Puntos Computadora: ${computerScore}`)
     }else if (humanScore < computerScore){
         alert(`Has Perdido este juego!

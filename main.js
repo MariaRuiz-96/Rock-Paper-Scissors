@@ -69,6 +69,7 @@ function playGame(){
             Putos Jugador: ${humanScore}
             Puntos Computadora: ${computerScore}`)
     }
+    //* prueba rama secundaria
 }
 
 playGame()
